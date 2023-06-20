@@ -1,5 +1,5 @@
 ---
-title: Solara Gps_Converter
+title: Solara_Plotly_Graphs 
 emoji: 🌍
 colorFrom: green
 colorTo: red
@@ -10,21 +10,34 @@ app_port: 8765
 duplicated_from: DavMelchi/solara-gps-converter
 ---
 
+# Solara + Plotly Graphs
+
 ## Introduction
 
-GPS Coordinate Converter provides a convenient way to convert GPS coordinates between different formats. It simplifies the process of converting latitude and longitude coordinates to various representations such as Decimal and  degrees-minutes-seconds (DMS) coordinates.
+This project utilizes the Solara Framework to create interactive and visually appealing graphs using Plotly.
 
-## Features
+## Examples
 
-- Convert GPS coordinates between Decimal and degrees-minutes-seconds (DMS)
-- Accurate and reliable conversion algorithms
-- Supports both forward and reverse coordinate conversions
-- Simple and intuitive API
-  
+The project provides several examples that demonstrate the capabilities of Plotly and the Solara Framework. These examples include:
+
+- Scatter plots
+- Line plots
+- Bar charts
+- Pie charts
+- 3D surface plots
+- Heatmaps
+- Subplots
+You can find the examples in the *pages* directory. Each example is a separate Python script that generates a specific type of graph.
+
+## Resources
+
+- Solara Framework <https://github.com/widgetti/solara>
+- Plotly Python Graphing Library <https://plotly.com/python>
+
+## Credits
+
+The code and examples in this project are based on the Plotly tutorial by Derek Banas. Please refer to his repository for the original tutorial: <https://github.com/derekbanas/plotly-tutorial/blob/master/Plotly%20Tut.ipynb>
+
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
-
-## Acknowledgements
-
-Coordinate Converter is built upon the excellent Solara.<https://github.com/widgetti/solara>
