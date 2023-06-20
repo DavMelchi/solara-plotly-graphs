@@ -1,6 +1,6 @@
 FROM jupyter/base-notebook:latest
 
-RUN mamba install -c conda-forge leafmap geopandas localtileserver -y && \
+RUN mamba install -c conda-forge geopandas localtileserver -y && \
     fix-permissions "${CONDA_DIR}" && \
     fix-permissions "/home/${NB_USER}"
 
@@ -18,4 +18,4 @@ USER ${NB_USER}
 
 EXPOSE 8765
 
-CMD ["solara", "run", "./pages", "--host=0.0.0.0"]
+CMD ["solara", "run", "./pages/main.py", "--host=0.0.0.0"]
