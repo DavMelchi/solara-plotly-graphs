@@ -11,7 +11,7 @@ from density_heatmap import DensityHeatmap
 from treed_plot import TreeD
 from maps import Maps
 from other_plot import OtherPlots
-from animated import AnimatedPlots
+from animated_plot import AnimatedPlots
 
 
 @solara.component
@@ -70,7 +70,7 @@ def treeD_plot():
     TreeD()
 
 @solara.component
-def map():
+def map_plot():
     with solara.Sidebar():
         SharedSidebar()
     Maps()
@@ -98,7 +98,7 @@ routes = [
     solara.Route(path="violin", component=violin, label="Violin"),
     solara.Route(path="density-heatmap", component=density, label="Density-Heatmap"),
     solara.Route(path="Plot_3D", component=treeD_plot, label="3D-Plot"),
-    solara.Route(path="map", component=map, label="Maps"),
+    solara.Route(path="map", component=map_plot, label="Maps"),
     solara.Route(path="other", component=other, label="Other_Plot"),
     solara.Route(path="animated", component=animate, label="Animated_Plot"),
 
